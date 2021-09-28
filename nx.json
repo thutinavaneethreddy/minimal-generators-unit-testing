@@ -26,13 +26,5 @@
       }
     ]
   },
-  "projects": {
-    "app1": {
-      "tags": []
-    },
-    "app1-e2e": {
-      "tags": [],
-      "implicitDependencies": ["app1"]
-    }
-  }
+  "projects": {}
 }

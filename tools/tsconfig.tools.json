@@ -4,9 +4,9 @@
     "outDir": "../dist/out-tsc/tools",
     "rootDir": ".",
     "module": "commonjs",
-    "target": "es5",
-    "types": ["node"],
-    "importHelpers": false
+    "target": "es2016",
+    "types": ["jest", "node"]
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts", "**/*.d.ts"],
+  "exclude": ["**/*/files/**/*"]
 }

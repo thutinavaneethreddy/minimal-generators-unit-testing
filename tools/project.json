@@ -1,0 +1,22 @@
+{
+  "root": "tools",
+  "sourceRoot": "tools",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["tools/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "tools/jest.config.js",
+        "runInBand": true
+      },
+      "outputs": ["coverage/tools"]
+    }
+  },
+  "tags": []
+}
